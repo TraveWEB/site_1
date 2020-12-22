@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="./slick-1.8.1/slick/slick-theme.css"/>
 </head>
 <body>
     <!-- Header start -->
@@ -30,16 +29,15 @@
 
         <div class="intro">
             <div class="wrapper">
-                <div class="intro_block">
-                    <div class="intro_content">
-                        <div class="block"></div>
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
+                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
+                        <div class="swiper-slide ibg"><img src="./img/intro.png" alt="img"></div>
                     </div>
-                    <div class="intro_content">
-                        <div class="block"></div>
-                    </div>
-                    <div class="intro_content">
-                        <div class="block"></div>
-                    </div>
+                    <!-- Add Arrows -->
+                    <div class="swiper-button-next"><img src="./img/arrow-right.png" alt="img" class="img-next-prev"></div>
+                    <div class="swiper-button-prev"><img src="./img/arrow-left.png" alt="img" class="img-next-prev"></div>
                 </div>
             </div>
         </div>
@@ -83,59 +81,59 @@
                 <h2 class="welcome_title">Популярные товары</h2>
                 <div class="popular_blocks">
                     <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular-img">
-                        <p class="popular-country">Россия</p>
-                        <p class="popular-title">Длинное название товара</p>
-                        <p class="popular-sub-title">Краткое описание товара</p>
-                        <p class="popular-availability">В наличие, коробок: <span class="popular-availability-bold">250</span></p>
-                        <p class="popular-crossed-price">1690 р./10 к</p>
-                        <p class="popular-price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular-buy-minimum">Минальная закупка: 10 коробок</p>
-                        <button class="popular-button">Подробнее</button>
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <button class="popular_button">Подробнее</button>
                     </div>
                     <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular-img">
-                        <p class="popular-country">Россия</p>
-                        <p class="popular-title">Длинное название товара</p>
-                        <p class="popular-sub-title">Краткое описание товара</p>
-                        <p class="popular-availability">В наличие, коробок: <span class="popular-availability-bold">250</span></p>
-                        <p class="popular-crossed-price">1690 р./10 к</p>
-                        <p class="popular-price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular-buy-minimum">Минальная закупка: 10 коробок</p>
-                        <button class="popular-button">Подробнее</button>
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <button class="popular_button">Подробнее</button>
                     </div>
                     <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular-img">
-                        <p class="popular-country">Россия</p>
-                        <p class="popular-title">Длинное название товара</p>
-                        <p class="popular-sub-title">Краткое описание товара</p>
-                        <p class="popular-availability">В наличие, коробок: <span class="popular-availability-bold">250</span></p>
-                        <p class="popular-crossed-price">1690 р./10 к</p>
-                        <p class="popular-price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular-buy-minimum">Минальная закупка: 10 коробок</p>
-                        <button class="popular-button">Подробнее</button>
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <button class="popular_button">Подробнее</button>
                     </div>
                     <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular-img">
-                        <p class="popular-country">Россия</p>
-                        <p class="popular-title">Длинное название товара</p>
-                        <p class="popular-sub-title">Краткое описание товара</p>
-                        <p class="popular-availability">В наличие, коробок: <span class="popular-availability-bold">250</span></p>
-                        <p class="popular-crossed-price">1690 р./10 к</p>
-                        <p class="popular-price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular-buy-minimum">Минальная закупка: 10 коробок</p>
-                        <button class="popular-button">Подробнее</button>
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <button class="popular_button">Подробнее</button>
                     </div>
                     <div class="popular_blk">
-                        <img src="./img/apple.png" alt="img" class="popular-img">
-                        <p class="popular-country">Россия</p>
-                        <p class="popular-title">Длинное название товара</p>
-                        <p class="popular-sub-title">Краткое описание товара</p>
-                        <p class="popular-availability">В наличие, коробок: <span class="popular-availability-bold">250</span></p>
-                        <p class="popular-crossed-price">1690 р./10 к</p>
-                        <p class="popular-price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
-                        <p class="popular-buy-minimum">Минальная закупка: 10 коробок</p>
-                        <button class="popular-button">Подробнее</button>
+                        <img src="./img/apple.png" alt="img" class="popular_img">
+                        <p class="popular_country">Россия</p>
+                        <h2 class="popular_title">Длинное название товара</h2>
+                        <p class="popular_description">Краткое описание товара</p>
+                        <p class="popular_availability">В наличие, коробок: <span class="popular_availability-bold">250</span></p>
+                        <p class="popular_crossed-price">1690 р./10 к</p>
+                        <p class="popular_price">от 1250 р. <span class="popular-price-little">за 1 коробку</span></p>
+                        <p class="popular_buy-minimum">Минальная закупка: 10 коробок</p>
+                        <button class="popular_button">Подробнее</button>
                     </div>
                 </div>
                 <div class="popular_footer">
@@ -184,8 +182,15 @@
     </footer>
     <!-- Footer end -->
 
-    <script src="./js/jquery.js"></script>
-    <script src="./slick-1.8.1/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./js/script.js"></script>
+    <script>
+		var swiper = new Swiper('.swiper-container', {
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+	</script>
 </body>
 </html>
