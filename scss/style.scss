@@ -519,6 +519,10 @@ main {
 /* ------------------------------------ */
 /* ------------------------------------ */
 
+
+
+
+
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -526,6 +530,8 @@ main {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+
+
 
 /* ------------------------------------ */
 /* ------------------------------------ */
@@ -537,17 +543,17 @@ main {
 
 .search {
   width: 100%;
+  display: flex;
+  justify-content: center;
 
   .wrapper {
     border: 2px solid #61a036;
     border-radius: 7px;
     display: flex;
     justify-content: space-between;
-    margin-top: 37px;
-    margin-bottom: 40px;
+    margin: 37px 0 40px 0;
 
     input {
-      width: 642px;
       padding: 14px 23px;
       background: 0;
       border: 0;
@@ -586,16 +592,36 @@ main {
 
 .intro {  
   margin-bottom: 40px;
+
   .wrapper {
-    .intro_block {
-      .intro_content {
-        width: 1440px;
-        height: 425px;
-        .block {
-          width: 1440px;
-          height: 425px;
-          background-image: url(/img/intro.png);
+
+    .swiper-container {
+      width: 100%;
+      height: 425px;
+      border-radius: 7px;
+
+      .swiper-wrapper {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .swiper-button-next, .swiper-button-prev {
+
+        &:after {
+          display: none;
         }
+      }
+
+      .swiper-button-next {
+        width: 40px;
+        height: 40px;
+        margin-right: 25px;
+      }
+
+      .swiper-button-prev {
+        width: 40px;
+        height: 40px;
+        margin-left: 25px;
       }
     }
   }
@@ -656,9 +682,11 @@ main {
 
 .welcome {
   margin: 60px 0 0 0;
+
   .wrapper {
     display: flex;
     flex-direction: column;
+
     .welcome_title {
       font-size: 48px;
       line-height: 45px;
@@ -666,7 +694,9 @@ main {
       text-align: center;
       padding: 0 0 30px 0;
     }
+
     .welcome_sub-title {
+
       p {
         font-size: 18px;
         line-height: 31px;
@@ -685,9 +715,11 @@ main {
 /* ------------------------------------ */
 
 .popular {
+
   .wrapper {
     display: flex;
     flex-direction: column;
+
     .welcome_title {
       font-size: 48px;
       line-height: 45px;
@@ -695,69 +727,74 @@ main {
       text-align: center;
       margin: 60px 0 40px 0;
     }
+
     .popular_blocks {
       display: flex;
       justify-content: space-between;
+
       .popular_blk {
         width: 263px;
-        .popular-img {
+
+        .popular_img {
           width: 260px;
           height: 230px;
-          border-radius: 10px;
+          border-radius: 7px;
         }
-        .popular-country {
+        .popular_country {
           font-size: 18px;
           @include Gotham(500);
           line-height: 17px;
           padding: 15px 0 15px;
         }
-        .popular-title {
+        .popular_title {
           font-size: 24px;
           @include Gotham(500);
           line-height: 22px;
           padding-bottom: 15px;
         }
-        .popular-sub-title {
+        .popular_description {
           font-size: 18px;
           @include Gotham(400);
           line-height: 17px;
-          padding-bottom: 20px;
+          margin-bottom: 15px;
         }
-        .popular-availability {
+        .popular_availability {
           font-size: 16px;
           @include Gotham(400);
           line-height: 15px;
-          padding-bottom: 30px;
+          margin-bottom: 30px;
         }
-        .popular-availability-bold {
+        .popular_availability-bold {
           @include Gotham(700);
         }
-        .popular-crossed-price {
+        .popular_crossed-price {
           font-size: 18px;
           @include Gotham(400);
           line-height: 17px;
           color: #818181;
           text-decoration-line: line-through;
+          padding-bottom: 10px;
         }
-        .popular-price {
+        .popular_price {
           font-size: 24px;
           @include Gotham(500);
           line-height: 22px;
           padding-bottom: 15px;
         }
-        .popular-price-little {
+        .popular_price-little {
           font-size: 18px;
           line-height: 17px;
         }
-        .popular-buy-minimum {
+        .popular_buy-minimum {
           font-size: 16px;
           @include Gotham(400);
           line-height: 15px;
           padding-bottom: 15px;
         }
-        .popular-button {
-          width: 260px;
-          height: 50px;
+        .popular_button {
+          width: 100%;
+          white-space: normal;
+          padding: 16px 20px;
           background-color: #61A036;
           border-radius: 7px;
           border: none;
@@ -768,11 +805,13 @@ main {
         }
       }
     }
+
     .popular_footer {
       display: flex;
       flex-direction: column;
       align-items: center;
       margin-top: 80px;
+
       .popular-footer-p {
         font-size: 18px;
         @include Roboto(400);
@@ -804,10 +843,13 @@ main {
 
 .advantages {
   margin: 60px 0 0 0;
+
   .wrapper {
     display: flex;
     flex-direction: column;
+
     .advantages_blk {
+
       h2 {
         font-size: 48px;
         line-height: 45px;
@@ -817,18 +859,21 @@ main {
       }
     }
     .advantages_blocks {
+
       display: flex;
       justify-content: space-between;
+
       .block {
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: center;
         width: 260px;
+
         img {
           margin: 0 0 13px 0;
-          width: 50px;
-          height: 50px;
+          width: 53px;
+          height: 53px;
         }
         p {
           font-size: 18px;
@@ -855,10 +900,16 @@ main {
 /* ------------------------------------ */
 /* ------------------------------------ */
 
+
+
+
+
 .main_section {
   display: flex;
+
   .wrapper {
     display: flex;
+
     .content_left {
       width: 1100px;
       display: flex;
@@ -881,6 +932,7 @@ main {
 
 .title {
   margin: 65px 0 65px 0;
+
   .title-h1 {
     font-size: 48px;
     @include Gotham(500);
@@ -919,3 +971,401 @@ main {
 /* ------------------------------------ */
 /* ------------------------------------ */
 /* ------------------------------------ */
+
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------==========MEDIA=========------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+/* ------------------------------------ */
+
+@media screen and (max-width: 1920px) {
+  .wrapper {
+    width: 75vw;
+  }
+
+
+
+
+  .search {
+    width: 75vw;
+    margin: 0 auto;
+  
+    .wrapper {
+      border: 0.104vw solid #61a036;
+      border-radius: 0.365vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 1.927vw 0 2.083vw 0;
+  
+      input {
+        padding: 0.729vw 1.198vw;
+        background: 0;
+        border: 0;
+        width: 75vw;
+        @include Roboto(400);
+        font-size: 0.938vw;
+        line-height: 175%;
+  
+        &::placeholder {
+          @include Roboto(400);
+          font-size: 0.938vw;
+          line-height: 175%;
+          color: #828282;
+        }
+      }
+  
+      a {
+        background: #61a036;
+        min-width: 8.073vw;
+        padding: 0.677vw 2.344vw;
+        font-size: 0.938vw;
+        line-height: 175%;
+        color: #ffffff;
+        @include Gotham(400);
+      }
+    }
+  }
+
+
+
+
+  .intro {  
+  margin-bottom: 2.083vw;
+
+  .wrapper {
+
+    .swiper-container {
+      width: 75vw;
+      height: 22.135vw;
+      border-radius: 0.365vw;
+
+      .swiper-wrapper {
+        width: 75%;
+        height: 100%;
+      }
+      
+      .swiper-button-next, .swiper-button-prev {
+
+        &:after {
+          display: none;
+        }
+
+        .img-next-prev {
+          width: 2.083vw;
+          height: 2.083vw;
+        }
+      }
+
+      .swiper-button-next {
+        width: 2.083vw;
+        height: 2.083vw;
+      }
+
+      .swiper-button-prev {
+        width: 2.083vw;
+        height: 2.083vw;
+      }
+
+    }
+  }
+}
+
+
+
+
+
+.categories {
+  width: 75vw;
+  margin: 0 auto;
+
+  .wrapper {
+    display: flex;
+    justify-content: center;
+
+    .categories_blk {
+      width: 13.698vw;
+      padding: 0.417vw 1.615vw 1.094vw 1.615vw;
+      display: block;
+      border: 1px solid #d2d2d2;
+      box-sizing: border-box;
+      border-radius: 0.365vw;
+      margin-right: 1.615vw;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      .blk_img {
+        width: 10.417vw;
+        height: 8.438vw;
+        margin-bottom: 0.781vw;
+      }
+
+      .blk_title {
+        text-align: center;
+        font-size: 1.250vw;
+        line-height: 1.458vw;
+        @include Roboto(500);
+        color: #333333;
+      }
+    }
+  }
+}
+
+
+
+.welcome {
+  margin: 3.125vw 0 0 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .welcome_title {
+      font-size: 2.500vw;
+      line-height: 2.344vw;
+      @include Gotham(500);
+      text-align: center;
+      padding: 0 0 1.563vw 0;
+    }
+
+    .welcome_sub-title {
+
+      p {
+        font-size: 0.938vw;
+        line-height: 1.615vw;
+        @include Gotham(400);
+      }
+    }
+  }
+}
+
+
+
+.popular {
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .welcome_title {
+      font-size: 2.500vw;
+      line-height: 2.344vw;
+      @include Gotham(500);
+      text-align: center;
+      margin: 3.125vw 0 2.083vw 0;
+    }
+
+    .popular_blocks {
+      display: flex;
+      justify-content: space-between;
+
+      .popular_blk {
+        width: 13.698vw;
+
+        .popular_img {
+          width: 13.542vw;
+          height: 11.979vw;
+          border-radius: 0.365vw;
+        }
+        .popular_country {
+          font-size: 0.938vw;
+          @include Gotham(500);
+          line-height: 0.885vw;
+          padding: 0.781vw 0 0.781vw;
+        }
+        .popular_title {
+          font-size: 1.250vw;
+          @include Gotham(500);
+          line-height: 1.146vw;
+          padding-bottom: 0.781vw;
+        }
+        .popular_description {
+          font-size: 0.938vw;
+          @include Gotham(400);
+          line-height: 0.885vw;
+          margin-bottom: 0.781vw;
+        }
+        .popular_availability {
+          font-size: 0.833vw;
+          @include Gotham(400);
+          line-height: 0.781vw;
+          margin-bottom: 1.563vw;
+        }
+        .popular_availability-bold {
+          @include Gotham(700);
+        }
+        .popular_crossed-price {
+          font-size: 0.938vw;
+          @include Gotham(400);
+          line-height: 0.885vw;
+          color: #818181;
+          text-decoration-line: line-through;
+          padding-bottom: 0.521vw;
+        }
+        .popular_price {
+          font-size: 1.250vw;
+          @include Gotham(500);
+          line-height: 1.146vw;
+          padding-bottom: 0.781vw;
+        }
+        .popular_price-little {
+          font-size: 0.938vw;
+          line-height: 0.885vw;
+        }
+        .popular_buy-minimum {
+          font-size: 0.833vw;
+          @include Gotham(400);
+          line-height: 0.781vw;
+          padding-bottom: 0.781vw;
+        }
+        .popular_button {
+          width: 100%;
+          white-space: normal;
+          padding: 0.833vw 1.042vw;
+          background-color: #61A036;
+          border-radius: 0.365vw;
+          border: none;
+          color: white;
+          font-size: 0.365vw;
+          @include Gotham(400);
+          line-height: 0.781vw;
+        }
+      }
+    }
+
+    .popular_footer {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 4.167vw;
+
+      .popular-footer-p {
+        font-size: 0.938vw;
+        @include Roboto(400);
+        line-height: 1.094vw;
+        padding-bottom: 1.302vw;
+      }
+      .popular-footer-button {
+        width: 11.719vw;
+        height: 2.604vw;
+        background-color: #61A036;
+        border-radius: 0.365vw;
+        border: none;
+        color: white;
+        font-size: 0.833vw;
+        @include Gotham(400);
+        line-height: 0.781vw;
+      }
+    }
+  }
+}
+
+
+
+
+
+.advantages {
+  margin: 3.125vw 0 0 0;
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+
+    .advantages_blk {
+
+      h2 {
+        font-size: 2.500vw;
+        line-height: 2.344vw;
+        @include Gotham(500);
+        text-align: center;
+        margin: 0 0 2.344vw 0;
+      }
+    }
+    .advantages_blocks {
+
+      display: flex;
+      justify-content: space-between;
+
+      .block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 13.542vw;
+
+        img {
+          margin: 0 0 0.677vw 0;
+          width: 2.760vw;
+          height: 2.760vw;
+        }
+        p {
+          font-size: 0.938vw;
+          line-height: 1.615vw;
+          @include Gotham(400);
+        }
+      }
+    }
+  }
+}
+
+
+
+
+
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 100vw;
+  }
+
+
+
+
+  .search {
+    width: 100vw;
+    margin: 0 auto;
+  
+    .wrapper {
+      border: 0.104vw solid #61a036;
+      border-radius: 0.365vw;
+      display: flex;
+      justify-content: space-between;
+      margin: 1.927vw 0 2.083vw 0;
+  
+      input {
+        padding: 0.729vw 1.198vw;
+        background: 0;
+        border: 0;
+        width: 90vw;
+        @include Roboto(400);
+        font-size: 0.938vw;
+        line-height: 175%;
+  
+        &::placeholder {
+          @include Roboto(400);
+          font-size: 0.938vw;
+          line-height: 175%;
+          color: #828282;
+        }
+      }
+  
+      a {
+        background: #61a036;
+        min-width: 8.073vw;
+        padding: 0.677vw 2.344vw;
+        font-size: 0.938vw;
+        line-height: 175%;
+        color: #ffffff;
+        @include Gotham(400);
+      }
+    }
+  }
+
+
+
+
+}
